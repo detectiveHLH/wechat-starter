@@ -3,7 +3,7 @@ const IP = '192.168.199.222';
 // 应用配置
 export default {
   // ip地址
-  IP: IP,
+  IP,
   // 后端地址
   HOST_NAME: process.env.NODE_ENV === 'development' ? `http://${IP}:3003` : '',
   // 前端地址

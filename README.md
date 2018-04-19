@@ -1,5 +1,3 @@
-[English](./README.md) | 简体中文
-
 # Wechat Official Account Starter
 
 - 预览：http://preview.pro.ant.design
