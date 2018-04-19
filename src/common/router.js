@@ -73,15 +73,6 @@ export const getRouterData = (app) => {
     '/': {
       component: dynamicWrapper(app, ['user', 'login'], () => import('../layouts/BasicLayout')),
     },
-    '/score/range': {
-      component: dynamicWrapper(app, ['score'], () => import('../routes/Score/Range')),
-    },
-    '/score/test': {
-      component: dynamicWrapper(app, ['score'], () => import('../routes/Score/Test')),
-    },
-    '/score/amoeba': {
-      component: dynamicWrapper(app, ['score'], () => import('../routes/Score/Amoeba')),
-    },
     '/dashboard/analysis': {
       component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
     },

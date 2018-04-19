@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'dva';
 import styles from './index.less';
 import config from '../../../config/app';
-import { appid, scope } from '../../../config/wechat';
 
 @connect(({ score, loading }) => ({
   score,
@@ -13,7 +12,7 @@ export default class Index extends Component {
 
   componentWillMount() {
     const redirectUri = `${config.HOST_NAME_FRONT_END}/#${this.changeUrl(this.props.match.params.path)}`;
-    const path = `http://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${scope}&state=STATE#wechat_redirect`;
+    const path = `http://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.APP_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=${config.SCOPE}&state=STATE#wechat_redirect`;
     window.location.href = path;
   }
 

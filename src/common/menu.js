@@ -1,20 +1,6 @@
 import { isUrl } from '../utils/utils';
 
 const menuData = [{
-  name: '总分排位',
-  icon: 'search',
-  path: 'score',
-  children: [{
-    name: '绩效',
-    path: 'range',
-  }, {
-    name: '阿米巴',
-    path: 'amoeba',
-  }, {
-    name: '组件测试',
-    path: 'test',
-  }],
-}, {
   name: 'dashboard',
   icon: 'dashboard',
   path: 'dashboard',

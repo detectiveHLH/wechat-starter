@@ -1,7 +1,7 @@
 {
-  "name": "bonus-frontend",
+  "name": "Wechat-offical-account-starter",
   "version": "1.1.0",
-  "description": "A bonus information applications for tap4fun",
+  "description": "Help develop your own wechat offical account easily",
   "private": true,
   "scripts": {
     "precommit": "npm run lint-staged",
