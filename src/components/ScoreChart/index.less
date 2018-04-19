@@ -1,0 +1,54 @@
+@import "~antd/lib/style/themes/default.less";
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+path {
+  fill: none;
+  stroke: #b7b7b7;
+  shape-rendering: crispEdges;
+}
+
+// 将x轴的坐标的刻度尺隐藏
+.axis line {
+  display: none;
+}
+
+.MyText {
+  fill: #000;
+  text-anchor: middle;
+}
+
+.dash {
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  .titleItem {
+    color: #07263b;
+    text-align: center;
+    display: inline-block;
+    height: inherit;
+  }
+  .lineLeft {
+    background: rgba(153, 153, 153, .3);
+    width: 6px;
+    height: 1px;
+    float: left;
+    margin-top: 10px;
+  }
+  .lineRight {
+    background: rgba(153, 153, 153, .3);
+    width: 6px;
+    height: 1px;
+    float: right;
+    margin-top: 10px;
+  }
+  .dashItem {
+    height: 420px;
+    margin-top: 10px;
+    width: 1px;
+    border-right: 1px dashed rgba(153, 153, 153, .3);
+    float: right;
+  }
+}

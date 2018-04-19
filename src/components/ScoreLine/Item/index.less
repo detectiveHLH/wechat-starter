@@ -1,0 +1,112 @@
+@itemGap: 10px;
+@normalFontSize: 12px;
+@hoverFontSize: 14px;
+@normalMarginTop: -1px;
+@hoverMarginTop: -3px;
+@hoverMarginLeft: -10px;
+
+.scoreItem {
+  display: flex;
+}
+
+/**
+左侧部门名字
+ */
+.itemNameContainer {
+  width: 140px;
+  height: 15px;
+}
+.itemName {
+  font-size: @normalFontSize;
+  text-align: right;
+  padding-right: @itemGap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: @normalMarginTop;
+}
+// hover
+.itemNameContainerHover {
+  width: 140px;
+  height: 15px;
+}
+.itemNameHover {
+  font-size: @hoverFontSize;
+  text-align: right;
+  padding-right: @itemGap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: @hoverMarginTop;
+}
+
+/**
+中部分位线
+ */
+.lineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 15px;
+}
+.line {
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+  > div {
+    display: none;
+  }
+}
+// hover
+.lineContainerHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 15px;
+  margin-left: @hoverMarginLeft;
+}
+.lineHover {
+  width: 130px;
+  height: 16px;
+  border-radius: 10px;
+  > div {
+    font-size: 12px;
+    color: #fff;
+    display: block;
+  }
+}
+
+/**
+右侧分数
+ */
+.scoreContainer {
+  width: 40px;
+  height: 15px;
+}
+.score {
+  text-align: left;
+  font-size: @normalFontSize;
+  padding-left: @itemGap;
+  margin-top: @normalMarginTop;
+}
+// hover
+.scoreContainerHover {
+  width: 40px;
+  height: 15px;
+}
+.scoreHover {
+  text-align: left;
+  font-size: @hoverFontSize;
+  padding-left: @itemGap;
+  margin-top: @hoverMarginTop;
+  margin-left: @hoverMarginLeft;
+}
+
+.bgPrimary {
+  background-color: #6495e8;
+}
+.bgDisable {
+  background-color: #eee;
+}

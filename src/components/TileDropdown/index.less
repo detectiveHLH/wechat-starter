@@ -1,0 +1,104 @@
+.dropHolder {
+  width: 300px;
+  position: relative;
+  background: #fff;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+  padding: 0 9px;
+  > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0;
+    > li {
+      background: #fafafa;
+      padding: 5px;
+      list-style-type: none;
+      margin-right: 5px;
+      color: #219fab;
+      border-radius: 4px;
+      border: 1px solid #e8e8e8;
+      &:last-child {
+        padding-left: 0;
+        border: none;
+        margin-right: 0;
+        background: transparent;
+      }
+      input {
+        box-sizing: content-box;
+        max-width: 100%;
+        width: 4px;
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;
+        color: rgba(0, 0, 0, .65);
+        background: transparent;
+        padding-left: 0;
+      }
+      input:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      .delItem {
+        cursor: pointer;
+        margin-left: 3px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, .45);
+      }
+      .delItem:hover {
+        color: rgba(0, 0, 0, .65);
+      }
+    }
+  }
+  .placeholderSpan {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    line-height: 20px;
+    margin-top: -10px;
+    color: #bfbfbf;
+  }
+  .dropSearch {
+    padding: 4px 11px 4px 0;
+  }
+}
+
+.downHolder {
+  max-height: 400px;
+  overflow: scroll;
+  :global {
+    .layer0 {
+      background: rgb(132, 144, 154);
+      color: #fff;
+    }
+    .layer0:hover, .layer1:hover {
+      background: #ddebe9;
+      color: rgba(0, 0, 0, .65);
+    }
+    .layer1 {
+      background: #f2f2f2;
+    }
+    .itemLabel {
+      display: inline-block;
+      width: 90%;
+      padding: 0 5px;
+    }
+    input[type="checkbox"] {
+      outline: none;
+      -webkit-appearance: none;  /*清除复选框默认样式*/
+      background: #fff url("./../../assets/components/checkbox.png");   /*复选框的背景图，就是上图*/
+      background-size: auto 18px;
+      height: 18px;   /*高度*/
+      vertical-align: middle;
+      width: 18px;
+    }
+    input[type="checkbox"]:checked {
+      outline: none;
+      background-position: -39px 0;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@timeWidth: 80px;
+@borderColor: #d9d9d9;
+
+.layout {
+  width: 210px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  display: flex;
+  transition: all .5s;
+  color: #d9d9d9;
+  &:hover {
+    border: 1px solid #4ebfc6;
+    cursor: pointer;
+  }
+}
+
+.content {
+  width: 250px;
+  border: 1px solid @borderColor;
+  border-radius: 5px;
+  max-height: 237px;
+  overflow-y: auto;
+  color: #a0a0a0;
+}
+.contentLine {
+  display: flex;
+}
+.contentLineItemUp {
+  flex-grow: 1;
+  width: 30px;
+  height: 30px;
+  &:first-child {
+    border-left: 1px solid @borderColor;
+  }
+  border-bottom: 1px solid @borderColor;
+  border-top: 1px solid @borderColor;
+}
+.contentLineItemDown {
+  flex-grow: 1;
+  width: 30px;
+  height: 30px;
+  &:first-child {
+    border-left: 1px solid @borderColor;
+  }
+}
+.contentYear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  font-size: 12px;
+  color: #515151;
+}
+.contentMonth {
+  width: 180px;
+  margin-top: -1px;
+}
+.up {
+  display: flex;
+}
+.down {
+  display: flex;
+}
+
+// 日历图标
+.calendarIcon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calendarIconActive {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// 开始时间
+.startTime {
+  margin-top: -1px;
+  width: @timeWidth;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.startTimeActive {
+  margin-top: -1px;
+  width: @timeWidth;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #4ebfc6;
+}
+
+// 过渡线
+.line {
+  margin-top: -1px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9c9c9c;
+}
+.lineActive {
+  margin-top: -1px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9c9c9c;
+}
+
+// 结束时间
+.endTime {
+  margin-top: -1px;
+  width: @timeWidth;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.endTimeActive {
+  margin-top: -1px;
+  width: @timeWidth;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #4ebfc6;
+}
