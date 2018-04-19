@@ -1,7 +1,7 @@
 {
   "name": "Wechat-offical-account-starter",
   "version": "1.1.0",
-  "description": "Help develop your own wechat offical account easily",
+  "description": "Help develop your own wechat official account easily",
   "private": true,
   "scripts": {
     "precommit": "npm run lint-staged",
